@@ -126,13 +126,87 @@ body{
 .main{
     display: flex;
     height: 100vh;
+    width: 90vw;
+    margin: 1rem 5vw 1rem;
+    justify-content: space-evenly;
 }
 .sidebar{
     height: 100%;
-    width: 250px;
+    width: 20%;
     display: flex;
-    background-color: #07cff6;
+    border-radius: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
 
+.content{
+    width: 58%;
+    background-color: red;
+    border-radius: 1rem;
+}
+
+.aside{
+    width: 20%;
+    background-color: yellow;
+    border-radius: 1rem;
+}
+@media (max-width : 1000px){
+
+    .aside {
+        display: none;
+    }
+    .sidebar{
+        width: 28%;
+    }
+    .content{
+        width: 68%;
+    }
+}
+@media (max-width : 770px){
+    .main{
+        margin: 1rem 0 1rem ;
+        width: 100vw;
+    }
+    .sidebar{
+        display: none;
+    }
+    .content{
+        width: 100%;
+        border-radius: 0;
+    }
+}
+.profile_card{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    background-color: #194162;
+    height: 200px;
+    width: 90%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.user_info h2{
+    font-weight: 650;
+    margin-bottom: 0.3rem;
+}
+.user_info p{
+    font-size: 0.8rem;
+}
+.sidebar_ops{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 90%;
+    background-color: #194162;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem; 
+}
+.sidebar_ops a{
+    margin-bottom: 0.4rem;
+    text-decoration: none;
+    font-weight: 400;
 }
 .footer{
     height: 500px;
